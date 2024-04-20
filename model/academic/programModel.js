@@ -1,7 +1,7 @@
 const mongoose = require('mongoose'); // Erase if already required
 
 // Declare the Schema of the Mongo model
-var programSchema = new mongoose.Schema({
+const programSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -62,6 +62,6 @@ var programSchema = new mongoose.Schema({
 },
     { timestamps: true }
 );
-const Program = mongoose.model("Program", ProgramSchema);
+const Program = mongoose.model("Program", programSchema);
 
 module.exports = Program;
